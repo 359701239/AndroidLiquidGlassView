@@ -7,13 +7,16 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://GitHub.com/QmDeve/AndroidLiquidGlassView/)
 
-[![Telegram](https://img.shields.io/badge/Telegram%20Group-QmDeves-blue.svg?logo=telegram)](https://t.me/QmDeves)
+[![Telegram](https://img.shields.io/badge/Telegram%20Group-QmDeve-blue.svg?logo=telegram)](https://t.me/QmDeve)
 [![QQ Group](https://img.shields.io/badge/QQ%20Group-1046829337-blue.svg?logo=qq)](https://qm.qq.com/q/OEVn8ZslMq)
 
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT"/>
-  <img src="https://img.shields.io/badge/Android-13.0%2B-brightgreen.svg" alt="Android 12"/>
-  <img src="https://img.shields.io/maven-central/v/com.qmdeve.liquidglass/core?label=Maven%20Central" alt="maven"/>
-  
+[![MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/QmDeve/AndroidLiquidGlassView/blob/master/LICENSE)
+[![Android-13](https://img.shields.io/badge/Android-13.0%2B-brightgreen.svg)](https://github.com/QmDeve/AndroidLiquidGlassView)
+
+[![Maven Central](https://img.shields.io/maven-central/v/com.qmdeve.liquidglass/core?label=Maven%20Central)](https://central.sonatype.com/artifact/com.qmdeve.liquidglass/core)
+[![JitPack](https://jitpack.io/v/com.qmdeve/AndroidLiquidGlassView.svg)](https://jitpack.io/#com.qmdeve/AndroidLiquidGlassView)
+[![GitHub Releases](https://img.shields.io/github/release/QmDeve/AndroidLiquidGlassView?label=GitHub%20Releases)](https://github.com/QmDeve/AndroidLiquidGlassView/releases)
+
 <br>
 <br>
 
@@ -28,9 +31,13 @@
 - **高度可定制 - 支持调整圆角半径、折射高度、折射偏移、色散参数、模糊半径、色调等**
 - **基于物理且真实的弹性效果**
 
+<div class="warning" style="padding: 10px; border-left: 4px solid #f0ad4e; background-color: #fcf8e3; margin: 10px 0;">
+在 <strong>Android 13</strong> 以下的设备上，将保持透明的背景，不会呈现任何效果
+</div>
+
 ## 预览
 
-<img src="https://cloud.qmdeve.com/f/pvTl/img1.png" alt="Image"/>
+<img src="https://cloud.qmdeve.com/f/JaIw/img1.png" alt="Image"/>
 
 ## Demo 演示
 [下载 Demo](https://github.com/QmDeve/AndroidLiquidGlassView/blob/master/app/release/app-release.apk)
@@ -38,7 +45,7 @@
 # 开始使用
 ### 快速集成
 
-<img src="https://img.shields.io/maven-central/v/com.qmdeve.liquidglass/core?label=Latest%20Version" alt="maven"/>
+[![Maven Central](https://img.shields.io/maven-central/v/com.qmdeve.liquidglass/core?label=Maven%20Central)](https://central.sonatype.com/artifact/com.qmdeve.liquidglass/core)
 
 **在 `build.gradle` 文件的 `dependencies{}` 块中添加依赖项**
 ```gradle
@@ -52,20 +59,11 @@ dependencies {
 
 ---
 
-## 效果说明
-**在`Android 13`及更高版本的设备上，将渲染完整的`液化玻璃`效果，包括：**
-- **`真实的折射效果`**
-- **`色散效果`**
-- **`可调节的模糊效果`**
-- **`可调节的色调效果`**
-
-**在`Android 13`以下的设备上，View将保持透明的背景，不会呈现任何效果**
-
 ## Star History
 [![Star History](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView.svg?variant=adaptive)](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView)
 
 ## 我的开源项目
- - **[QmBlurView](https://github.com/QmDeve/QmBlurView)**
+ - **[QmBlurView](https://blurview.qmdeve.com)**
  - **[Qm Authenticator for Android](https://github.com/Rouneant/Qm-Authenticator-for-Android)**
 
 ---
