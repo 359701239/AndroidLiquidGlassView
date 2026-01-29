@@ -49,7 +49,7 @@
 **在 `build.gradle` 文件的 `dependencies{}` 块中添加依赖项**
 ```gradle
 dependencies {
-   implementation 'com.qmdeve.liquidglass:core:1.0.0'
+   implementation 'com.qmdeve.liquidglass:core:1.0.1'
 }
 ```
 
