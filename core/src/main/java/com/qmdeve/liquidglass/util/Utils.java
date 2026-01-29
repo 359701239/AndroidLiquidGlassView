@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2025 QmDeve
+ * Copyright (c) 2025-2026 Donny Yale
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,12 +24,9 @@
  * ===========================================
  * Project: AndroidLiquidGlassView
  * Created Date: 2025-11-01
- * Author: QmDeve
+ * Author: Donny Yale
  * GitHub: https://github.com/QmDeve/AndroidLiquidGlassView
- *
- * Contributors:
- * - Donny Yale - https://github.com/QmDeve
- * - Ahmed Sbai - https://github.com/sbaiahmed1
+ * WebSite: https://liquidglass.qmdeve.com
  * ===========================================
  */
 
