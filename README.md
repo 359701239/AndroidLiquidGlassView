@@ -21,7 +21,6 @@
 ## Characteristic
 - **Realistic `liquid glass` effect - Physically-based `refraction` and `dispersion` effects**
 - **Height can be customized - support the adjustment of rounded corner radius, refraction height, refraction offset, dispersion parameters, blur radius, tone, etc**
-- **Based on physical and realistic elastic effects**
 
 <div class="warning" style="padding: 10px; border-left: 4px solid #f0ad4e; background-color: #fcf8e3; margin: 10px 0;">
 On devices below <strong>Android 13</strong>, the view will maintain a transparent background and will not render any effects
@@ -60,7 +59,7 @@ dependencies {
 
 ## License
 ```
-Copyright ©️ 2025-2026 DonnyYale (QmDeve)
+Copyright ©️ 2025-2026 Donny Yale
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

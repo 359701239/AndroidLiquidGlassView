@@ -29,7 +29,6 @@
 ## 特性
 - **`液态玻璃`效果 - 真实的折射与色散效果**
 - **高度可定制 - 支持调整圆角半径、折射高度、折射偏移、色散参数、模糊半径、色调等**
-- **基于物理且真实的弹性效果**
 
 <div class="warning" style="padding: 10px; border-left: 4px solid #f0ad4e; background-color: #fcf8e3; margin: 10px 0;">
 在 <strong>Android 13</strong> 以下的设备上，将保持透明的背景，不会呈现任何效果
@@ -70,7 +69,7 @@ dependencies {
 
 ## License
 ```
-Copyright ©️ 2025-2026 DonnyYale (QmDeve)
+Copyright ©️ 2025-2026 Donny Yale
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
