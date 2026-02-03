@@ -8,6 +8,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://GitHub.com/QmDeve/AndroidLiquidGlassView/)
 
 [![Telegram](https://img.shields.io/badge/Telegram%20Group-QmDeve-blue.svg?logo=telegram)](https://t.me/QmDeve)
+[![QQ Group](https://img.shields.io/badge/QQ%20Group-1054049593-blue.svg?logo=qq)](https://qm.qq.com/q/NBHRYhce4y)
 
 [![MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/QmDeve/AndroidLiquidGlassView/blob/master/LICENSE)
 [![Android-13](https://img.shields.io/badge/Android-13.0%2B-brightgreen.svg)](https://github.com/QmDeve/AndroidLiquidGlassView)
