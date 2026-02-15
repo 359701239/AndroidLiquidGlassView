@@ -124,11 +124,29 @@ public class LiquidTracker {
         velocityTracker.computeCurrentVelocity(1);
         float velocityX = velocityTracker.getXVelocity();
         float velocityY = velocityTracker.getYVelocity();
-        float velocity = (float)Math.sqrt(velocityX * velocityX + velocityY * velocityY);
+
+        // Calculate deformation separately for X and Y directions
+        // Stretch along movement direction, compress perpendicular to it
+        float absVx = Math.abs(velocityX);
+        float absVy = Math.abs(velocityY);
+
+        // Deformation intensity factor, adjust this value to control the degree of deformation
+        float stretchFactor = 0.5f;
+
+        float scaleX, scaleY;
+        if (absVx > absVy) {
+            // Horizontal movement dominant: stretch X axis, compress Y axis
+            scaleX = 1f + absVx * stretchFactor;
+            scaleY = 1f - absVx * stretchFactor * 0.5f;
+        } else {
+            // Vertical movement dominant: stretch Y axis, compress X axis
+            scaleX = 1f - absVy * stretchFactor * 0.5f;
+            scaleY = 1f + absVy * stretchFactor;
+        }
 
         return new float[] {
-                Math.clamp(1f + velocity * 0.5f, 0.6f, 1.4f),
-                Math.clamp(1f - velocity * 0.5f, 0.6f, 1.4f)
+                Math.clamp(scaleX, 0.6f, 1.4f),
+                Math.clamp(scaleY, 0.6f, 1.4f)
         };
     }
 
