@@ -42,7 +42,7 @@ On devices below <strong>Android 13</strong>, the view will maintain a transpare
 **Add dependencies in the `dependencies{}` block of `build.gradle`**
 ```gradle
 dependencies {
-   implementation 'com.qmdeve.liquidglass:core:1.0.1'
+   implementation 'com.qmdeve.liquidglass:core:1.0.2'
 }
 ```
 
@@ -56,7 +56,6 @@ dependencies {
 
 ## My open source project
  - **[QmBlurView](https://blurview.qmdeve.com)**
- - **[Qm Authenticator for Android](https://github.com/Rouneant/Qm-Authenticator-for-Android)**
 
 ## License
 ```
