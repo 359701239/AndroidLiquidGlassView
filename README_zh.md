@@ -7,9 +7,6 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://GitHub.com/QmDeve/AndroidLiquidGlassView/)
 
-[![Telegram](https://img.shields.io/badge/Telegram%20Group-QmDeve-blue.svg?logo=telegram)](https://t.me/QmDeve)
-[![QQ Group](https://img.shields.io/badge/QQ%20Group-1054049593-blue.svg?logo=qq)](https://qm.qq.com/q/NBHRYhce4y)
-
 [![MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/QmDeve/AndroidLiquidGlassView/blob/master/LICENSE)
 [![Android-13](https://img.shields.io/badge/Android-13.0%2B-brightgreen.svg)](https://github.com/QmDeve/AndroidLiquidGlassView)
 
@@ -41,28 +38,35 @@
 ## Demo 演示
 [下载 Demo](https://github.com/QmDeve/AndroidLiquidGlassView/blob/master/app/release/app-release.apk)
 
-# 开始使用
-### 快速集成
+## 集成
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.qmdeve.liquidglass/core?label=Maven%20Central)](https://central.sonatype.com/artifact/com.qmdeve.liquidglass/core)
 
-**在 `build.gradle` 文件的 `dependencies{}` 块中添加依赖项**
+在模块的 `build.gradle` 文件中添加依赖项：
+
 ```gradle
 dependencies {
    implementation 'com.qmdeve.liquidglass:core:1.0.2'
 }
 ```
 
-## 如何使用
-**请查看文档：[https://liquidglass.qmdeve.com/](https://liquidglass.qmdeve.com/zh/)**
+## 使用
+
+请查看文档，以了解如何使用该库
+
+**文档：[https://liquidglass.qmdeve.com/](https://liquidglass.qmdeve.com/zh/)**
 
 ---
 
 ## Star History
+
 [![Star History](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView.svg?variant=adaptive)](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView)
 
 ## 我的开源项目
- - **[QmBlurView](https://blurview.qmdeve.com)**
+
+- **[QmBlurView](https://blurview.qmdeve.com)**
+- **[Personal Homepage](https://github.com/QmDeve/personal-homepage)**
+- **[Qm Authenticator for Android](https://github.com/Rouneant/Qm-Authenticator-for-Android)**
 
 ---
 

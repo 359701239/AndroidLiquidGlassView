@@ -7,9 +7,6 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://GitHub.com/QmDeve/AndroidLiquidGlassView/)
 
-[![Telegram](https://img.shields.io/badge/Telegram%20Group-QmDeve-blue.svg?logo=telegram)](https://t.me/QmDeve)
-[![QQ Group](https://img.shields.io/badge/QQ%20Group-1054049593-blue.svg?logo=qq)](https://qm.qq.com/q/NBHRYhce4y)
-
 [![MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/QmDeve/AndroidLiquidGlassView/blob/master/LICENSE)
 [![Android-13](https://img.shields.io/badge/Android-13.0%2B-brightgreen.svg)](https://github.com/QmDeve/AndroidLiquidGlassView)
 
@@ -34,12 +31,12 @@ On devices below <strong>Android 13</strong>, the view will maintain a transpare
 ## Demo experience
 **[Download Demo](./app/release/app-release.apk)**
 
-# Start using
-### Quick integration
+## Integration
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.qmdeve.liquidglass/core?label=Maven%20Central)](https://central.sonatype.com/artifact/com.qmdeve.liquidglass/core)
 
-**Add dependencies in the `dependencies{}` block of `build.gradle`**
+Add the dependencies to your module's `build.gradle` file:
+
 ```gradle
 dependencies {
    implementation 'com.qmdeve.liquidglass:core:1.0.2'
@@ -47,15 +44,22 @@ dependencies {
 ```
 
 ## Quick use
-**Usage: [https://liquidglass.qmdeve.com/](https://liquidglass.qmdeve.com/)**
+
+Please refer to the documentation to learn how to use the library
+
+**Documentation: [https://liquidglass.qmdeve.com/](https://liquidglass.qmdeve.com/)**
 
 ---
 
 ## Star History
+
 [![Star History](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView.svg?variant=adaptive)](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView)
 
-## My open source project
- - **[QmBlurView](https://blurview.qmdeve.com)**
+## My Other Projects
+
+- **[QmBlurView](https://blurview.qmdeve.com)**
+- **[Personal Homepage](https://github.com/QmDeve/personal-homepage)**
+- **[Qm Authenticator for Android](https://github.com/Rouneant/Qm-Authenticator-for-Android)**
 
 ## License
 ```
