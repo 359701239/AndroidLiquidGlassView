@@ -46,7 +46,7 @@
 
 ```gradle
 dependencies {
-   implementation 'com.qmdeve.liquidglass:core:1.0.2'
+   implementation 'com.qmdeve.liquidglass:core:1.0.3'
 }
 ```
 
