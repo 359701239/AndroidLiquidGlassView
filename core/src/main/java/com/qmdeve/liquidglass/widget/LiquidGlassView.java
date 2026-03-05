@@ -70,6 +70,9 @@ public class LiquidGlassView extends ViewGroup {
     private float glowX, glowY;
     private boolean isTouching = false;
 
+    private final Path clipPath = new Path();
+    private final RectF clipRect = new RectF();
+
     public LiquidGlassView(Context context) {
         super(context);
         setLayerType(LAYER_TYPE_HARDWARE, null);
@@ -102,21 +105,36 @@ public class LiquidGlassView extends ViewGroup {
 
     @Override
     protected void dispatchDraw(@NonNull Canvas canvas) {
-        super.dispatchDraw(canvas);
-        if (touchEffectEnabled && isTouching) {
-            Path path = new Path();
-            RectF rect = new RectF(0, 0, getWidth(), getHeight());
-            path.addRoundRect(rect, cornerRadius, cornerRadius, Path.Direction.CW);
 
+        clipRect.set(0, 0, getWidth(), getHeight());
+        clipPath.reset();
+        clipPath.addRoundRect(
+                clipRect,
+                cornerRadius,
+                cornerRadius,
+                Path.Direction.CW
+        );
+
+        int save = canvas.save();
+        canvas.clipPath(clipPath);
+
+        super.dispatchDraw(canvas);
+
+        canvas.restoreToCount(save);
+
+        if (touchEffectEnabled && isTouching) {
             canvas.save();
-            canvas.clipPath(path);
+            canvas.clipPath(clipPath);
 
             float radius = Math.max(getWidth(), getHeight()) * 0.8f;
-            int[] colors = {Color.argb(60, 255, 255, 255), Color.TRANSPARENT};
-            float[] stops = {0f, 1f};
-            RadialGradient gradient = new RadialGradient(glowX, glowY, radius, colors, stops, Shader.TileMode.CLAMP);
+            int[] colors = {Color.argb(60,255,255,255), Color.TRANSPARENT};
+            float[] stops = {0f,1f};
+
+            RadialGradient gradient =
+                    new RadialGradient(glowX, glowY, radius, colors, stops, Shader.TileMode.CLAMP);
+
             glowPaint.setShader(gradient);
-            canvas.drawRect(rect, glowPaint);
+            canvas.drawRect(clipRect, glowPaint);
 
             canvas.restore();
         }
@@ -129,7 +147,12 @@ public class LiquidGlassView extends ViewGroup {
             View child = getChildAt(i);
             if (child.getVisibility() != GONE) {
                 // Layout children to fill the entire view
-                child.layout(0, 0, getWidth(), getHeight());
+                child.layout(
+                        getPaddingLeft(),
+                        getPaddingTop(),
+                        getPaddingLeft() + child.getMeasuredWidth(),
+                        getPaddingTop() + child.getMeasuredHeight()
+                );
             }
         }
     }
@@ -167,6 +190,7 @@ public class LiquidGlassView extends ViewGroup {
     public void setCornerRadius(float px) {
         float maxPx = getHeight() > 0 ? getHeight() / 2f : Utils.dp2px(getResources(), 99);
         this.cornerRadius = Math.max(0, Math.min(px, maxPx));
+        invalidate();
         updateConfig();
     }
 
@@ -376,7 +400,7 @@ public class LiquidGlassView extends ViewGroup {
                 LayoutParams.MATCH_PARENT,
                 LayoutParams.MATCH_PARENT
         );
-        addView(glass, lp);
+        addView(glass, 0, lp);
 
         ViewGroup source = customSource;
         if (source == null && getParent() instanceof ViewGroup) {
